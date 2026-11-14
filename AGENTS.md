@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+- Site photos and the hero video are Lovable asset pointers in src/assets (*.asset.json); import the pointer and use .url, so images load from this project's CDN rather than another project's.
+- The site reads its content and admin data from the existing QMEP backend configured in .env (public URL + publishable key only); never put secret keys there.
